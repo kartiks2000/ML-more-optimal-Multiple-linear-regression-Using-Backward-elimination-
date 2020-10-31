@@ -21,8 +21,8 @@ x = np.array(ct.fit_transform(x))
 
 
 # Avoiding Dummy Vairiable Trap
-# We know that there are dummy vairiable column at index 0,1,2 to avoid dummy trap we need to remove any on eof the dummy vairiable column hence we are removing the column 0
-# Although the linear regression take care of the dummy trap so we dont need to this manually but we did it to remind our self about dummy variable trap 
+# We know that there are dummy vairiable column at index 0,1,2 to avoid dummy trap we need to remove any one of the dummy vairiable column hence we are removing the column 0
+# Although the linear regression liberary take care of the dummy trap so we dont need to this manually but we did it to remind our self about dummy variable trap 
 x = x[:,1:]
 
 
